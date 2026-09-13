@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="judul">
+        <span><h1>Check Student Grade</h1></span>
+    </div>
+    <div class="box">
+        <h2>Student Name</h2>
+        <input type="text" id="namaSiswa" placeholder="Insert Student Name">
+        <div class="row">
+            <h2>Score</h2>
+            <input type="number" id="nilaiSiswa" placeholder="Insert Student Score">
+            <button onclick="tentukanNilai()">Determine the student's grade.</button>
+        </div>
+    </div>
+    <div class="hasil-siswa" id="hasilBox" style="display: none;">
+        <h1>Total Student Score</h1>
+        <div class="hasil">
+            <span>Student Name:</span>
+            <span id="resNama">-</span>
+        </div>
+        <div class="hasil">
+            <span>Score:</span>
+            <span id="resScore">tes</span>
+        </div>
+        <div class="hasil">
+            <span>Student Grade:</span>
+            <span id="resGrade">-</span>
+        </div>
+        <div class="hasil">
+            <span>Pass or Not:</span>
+            <span id="resTorf">-</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
